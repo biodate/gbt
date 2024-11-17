@@ -1,0 +1,133 @@
+/* Font and Colors */
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: #1b1b1b;
+    color: #f5f5f5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Parallax Effect */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 20px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #00acee;
+    color: #000;
+}
+
+/* Hero Section */
+.hero h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px 20px #000;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    opacity: 50;
+}
+
+.glow-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(90deg, #00acee, #1f8eff);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 172, 238, 0.75);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.glow-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 172, 238, 1);
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    margin: 0;
+}
+
+/* Cards */
+.skill-card, .project-card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    width: 250px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #1b1b1b;
+    border-top: 2px solid #00acee;
+    color: #f5f5f5;
+}
+
